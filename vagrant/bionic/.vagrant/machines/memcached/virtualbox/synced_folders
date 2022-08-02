@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/home/edvan/pdi/vagrant/bionic","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
