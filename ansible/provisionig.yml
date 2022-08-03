@@ -16,3 +16,17 @@
         - mysql-server-5.6
         - python-mysqldb
         - php5-mysql
+
+    - name: 'Criar o banco do MySQL'
+      mysql_db:
+        name: wordpress_db
+        login_user: root
+        state: present
+
+    - name: 'Criar o usuario no mysql'
+      mysql_user:
+        login_user: root
+        name: wordpress_db
+        password: 12345
+        priv: 'wordpress_db.*:ALL'
+        state: present
