@@ -92,9 +92,9 @@
         - { regex: 'localhost', value: "{{ wp_db_ip }}"}
       become: yes
 
-    - name: 'Copiando arquivo configurações do Apache2'
-      copy:
-        src: 'files/000-default.conf'
+    - name: 'Configura Apache para servir Wordpress'
+      template:
+        src: 'template/000-default.conf.j2'
         dest: '/etc/apache2/sites-available/000-default.conf'
       become: yes
       notify:
