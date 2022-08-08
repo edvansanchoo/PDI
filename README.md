@@ -1,6 +1,6 @@
 # PDI - Cursos da Alura
 
-<h1>Vagrant: gerenciando máquinas virtuais</h1>
+<h1><a hreh=https:"//cursos.alura.com.br/course/vagrant-gerenciando-maquinas-virtuais">Vagrant: gerenciando máquinas virtuais</a></h1>
 <ul>
   <li>A primeira máquina virtual </li>
   <li>Configuração da rede</li>
@@ -11,7 +11,7 @@
   <li>Configurações do provedor</li>
   <li>Virtualização vs Container</li>
 </ul>
-<h1>Ansible: sua infraestrutura como código</h1>
+<h1><a href="https://cursos.alura.com.br/course/infraestrutura-como-codigo-com-ansible">Ansible: sua infraestrutura como código</a></h1>
 <ul>
   <li>Primeiros passos com Ansible</li>
   <li>Criação do primeiro Playbook</li>
