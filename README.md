@@ -1,6 +1,6 @@
 # PDI - Cursos da Alura
 
-# DevOps
+<a href="https://cursos.alura.com.br/formacao-devops">DevOps</a>
 
 <h1><a href="https://cursos.alura.com.br/course/vagrant-gerenciando-maquinas-virtuais">Vagrant: gerenciando máquinas virtuais</a></h1>
 <ul>
