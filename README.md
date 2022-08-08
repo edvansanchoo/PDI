@@ -24,3 +24,7 @@
   <li>Trabalhando com variáveis e templates</li>
   <li>Usando roles, dependências e defaults</li>
 </ul>
+<h1><a href="https://cursos.alura.com.br/course/terraform">Terraform: automatize a infraestrutura na nuvem</a></h1>
+<ul>
+  <li>Provisionando a primeira infraestrutura com o Terraform</li>
+</ul>
