@@ -31,4 +31,6 @@
   <li>Utilizando referências e dependências entre os recursos</li>
   <li>Organizando a configuração com a separação dos arquivos e aliases</li>
   <li>Trabalhando com variáveis</li>
+  <li>Gerenciando recursos e outputs</li>
+  <li>Trabalhando em equipe - Terraform Cloud</li>
 </ul>
