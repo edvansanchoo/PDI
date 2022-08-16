@@ -27,4 +27,8 @@
 <h1><a href="https://cursos.alura.com.br/course/terraform">Terraform: automatize a infraestrutura na nuvem</a></h1>
 <ul>
   <li>Provisionando a primeira infraestrutura com o Terraform</li>
+  <li>Modificando a infraestrutura e inserindo novos recursos</li>
+  <li>Utilizando referências e dependências entre os recursos</li>
+  <li>Organizando a configuração com a separação dos arquivos e aliases</li>
+  <li>Trabalhando com variáveis</li>
 </ul>
