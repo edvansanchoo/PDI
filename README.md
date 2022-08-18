@@ -34,3 +34,9 @@
   <li>Gerenciando recursos e outputs</li>
   <li>Trabalhando em equipe - Terraform Cloud</li>
 </ul>
+<h1><a href="https://cursos.alura.com.br/course/docker-criando-gerenciando-containers">Docker: criando e gerenciando containers</a></h1>
+<ul>
+  <li>Conhecendo o Docker</li>
+  <li>Os primeiros comandos</li>
+  <li>Criando e compreendendo imagens</li>
+</ul>
