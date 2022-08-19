@@ -39,4 +39,7 @@
   <li>Conhecendo o Docker</li>
   <li>Os primeiros comandos</li>
   <li>Criando e compreendendo imagens</li>
+  <li>Persistindo dados</li>
+  <li>Comunicação através de redes</li>
+  <li>Coordenando containers</li>
 </ul>
