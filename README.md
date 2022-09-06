@@ -43,3 +43,13 @@
   <li>Comunicação através de redes</li>
   <li>Coordenando containers</li>
 </ul>
+<h1><a href="https://cursos.alura.com.br/course/docker-swarm-cluster-container">Docker Swarm: Orquestrador de containers</a></h1>
+<ul>
+  <li>Cluster com Docker Swarm</li>
+  <li>Responsabilidade dos nós workers</li>
+  <li>Gerenciando o cluster com managers</li>
+  <li>Separando as responsabilidades</li>
+  <li>Serviços globais e replicados</li>
+  <li>Driver Overlay</li>
+  <li>Deploy com Docker Stack</li>
+</ul>
