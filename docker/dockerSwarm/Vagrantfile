@@ -1,11 +1,5 @@
-#docker swarm join --token SWMTKN-1-4euwdyexk823rnfuocztdngowhwp175e0hpa9upv664gi25vtp-epuhq1pgn1k6on777njnw7n9o 192.168.100.10:2377
+#docker swarm join --token SWMTKN-1-1qnkc9os5ry9zsg2yl5btlynkxuw38zubghsypcnbyfk5eelfb-59iwx16fnb1l4iwjkhjkloklg 192.168.100.10:2377
 
-$script = <<-SCRIPT
-  sudo apt-get update && \
-  sudo apt-get install docker.io -y && \
-  sudo apt-get update && \
-  sudo apt-get install docker-compose -y
-SCRIPT
 
 
 Vagrant.configure("2") do |config|
@@ -18,8 +12,9 @@ Vagrant.configure("2") do |config|
   config.vm.define "swarm_main" do |swarm_main|
     swarm_main.vm.network "forwarded_port", guest: 80, host: 8091
     swarm_main.vm.network "public_network", ip: "192.168.100.10"
+    swarm_main.vm.hostname = "main"
 
-    swarm_main.vm.provision "shell", inline: $script
+    swarm_main.vm.provision "shell", path: "scriptInstallDocker.sh"
 
     swarm_main.vm.provider "virtualbox" do |vb|
       vb.name = "Ubuntu_bionic_swarm"
@@ -31,9 +26,9 @@ Vagrant.configure("2") do |config|
   config.vm.define "swarm_vm1" do |swarm_vm1|
     swarm_vm1.vm.network "forwarded_port", guest: 80, host: 8093
     swarm_vm1.vm.network "public_network", ip: "192.168.100.11"
+    swarm_vm1.vm.hostname = "vm1"
 
-
-    swarm_vm1.vm.provision "shell", inline: $script
+    swarm_vm1.vm.provision "shell", path: "scriptInstallDocker.sh"
 
     swarm_vm1.vm.provider "virtualbox" do |vb|
       vb.name = "Ubuntu_bionic_swarm_vm1"
@@ -45,8 +40,9 @@ Vagrant.configure("2") do |config|
   config.vm.define "swarm_vm2" do |swarm_vm2|
     swarm_vm2.vm.network "forwarded_port", guest: 80, host: 8094
     swarm_vm2.vm.network "public_network", ip: "192.168.100.12"
+    swarm_vm2.vm.hostname = "vm2"
 
-    swarm_vm2.vm.provision "shell", inline: $script
+    swarm_vm2.vm.provision "shell", path: "scriptInstallDocker.sh"
 
 
     swarm_vm2.vm.provider "virtualbox" do |vb|
@@ -56,4 +52,33 @@ Vagrant.configure("2") do |config|
     end
   end
 
+  config.vm.define "swarm_vm3" do |swarm_vm3|
+    swarm_vm3.vm.network "forwarded_port", guest: 80, host: 8095
+    swarm_vm3.vm.network "public_network", ip: "192.168.100.13"
+    swarm_vm3.vm.hostname = "vm3"
+
+    swarm_vm3.vm.provision "shell", path: "scriptInstallDocker.sh"
+
+
+    swarm_vm3.vm.provider "virtualbox" do |vb|
+      vb.name = "Ubuntu_bionic_swarm_vm3"
+      vb.memory = 1024
+      vb.cpus = 2
+    end
+  end
+
+  config.vm.define "swarm_vm4" do |swarm_vm4|
+    swarm_vm4.vm.network "forwarded_port", guest: 80, host: 8096
+    swarm_vm4.vm.network "public_network", ip: "192.168.100.14"
+    swarm_vm4.vm.hostname = "vm4"
+
+    swarm_vm4.vm.provision "shell", path: "scriptInstallDocker.sh"
+
+
+    swarm_vm4.vm.provider "virtualbox" do |vb|
+      vb.name = "Ubuntu_bionic_swarm_vm4"
+      vb.memory = 1024
+      vb.cpus = 2
+    end
+  end
 end
