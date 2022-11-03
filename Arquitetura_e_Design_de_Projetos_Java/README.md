@@ -10,3 +10,12 @@
   <li>Herança indesejadaa</li>
   <li>Trabalhando com abstraçõe</li>
 </ul>
+<h1><a href="https://cursos.alura.com.br/course/introducao-design-patterns-java">Design Patterns em Java I: boas práticas de programação</a></h1>
+<ul>
+  <li>Strategy  </li>
+  <li>Chain of Responsibility</li>
+  <li>Template Method</li>
+  <li>State</li>
+  <li>Command</li>
+  <li>Observer</li>
+</ul>
